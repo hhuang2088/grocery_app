@@ -1,0 +1,14 @@
+<h1>Edit Your Food</h1>
+<%= form_for @cart do |f| %>
+
+	<%= label_tag(:amount, "Amount:") %>
+	<%= f.number_field :amount %></br>
+
+	<%= label_tag(:item, "Item:") %>
+	<%= f.text_field :item %></br>
+
+	<%= label_tag(:description, "Description:") %>
+	<%= f.text_area :description %></br>
+
+	<%= f.submit "Update" %>
+<% end %>

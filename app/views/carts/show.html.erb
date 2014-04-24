@@ -1,0 +1,6 @@
+<h1>What's in your Grocery Cart</h1>
+<p>Amount: <%=@cart['amount'].to_s%></p>
+<p>Item: <%= @cart['item']%></p>
+<p>Description <%= @cart['description']%></p>
+
+<%= link_to "Back to Grocery Cart",carts_path%>
